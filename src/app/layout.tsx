@@ -13,11 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase : new URL("https://codesync-pearl.vercel.app/"),
   title: "CodeSync",
   description: "Sync your coding progress instantly and seamlessly",
   openGraph: {
     title: "CodeSync",
     description: "Sync your coding progress instantly and seamlessly",
+    url: "https://codesync-pearl.vercel.app/",
     siteName: "CodeSync",
     images: [
       {
