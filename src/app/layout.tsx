@@ -13,17 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase : new URL("https://codesync-pearl.vercel.app/"),
+  metadataBase : new URL("https://codesync-pearl.vercel.app"),
   title: "CodeSync",
   description: "Sync your coding progress instantly and seamlessly",
   openGraph: {
     title: "CodeSync",
     description: "Sync your coding progress instantly and seamlessly",
-    url: "https://codesync-pearl.vercel.app/",
+    url: "https://codesync-pearl.vercel.app",
     siteName: "CodeSync",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://codesync-pearl.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "CodeSync Preview",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CodeSync",
     description: "Sync your coding progress instantly and seamlessly",
-    images: ["/og-image.png"],
+    images: ["https://codesync-pearl.vercel.app/og-image.png"],
   },
 };
 
