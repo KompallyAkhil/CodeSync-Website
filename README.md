@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodeSync Extension
 
-## Getting Started
+CodeSync is a Chrome extension that helps you sync your coding solutions from various competitive programming platforms directly to your GitHub repository.
 
-First, run the development server:
+## Supported Platforms
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [x] LeetCode
+- [x] GeeksforGeeks
+- [x] Codeforces
+- [x] HackerRank
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Auto-Detection**: Automatically detects the coding platform you are using.
+- **One-Click Sync**: Extract your solution and problem details with a single click.
+- **GitHub Integration**: Pushes code directly to your configured GitHub repository.
+- **Status Updates**: Real-time feedback on extraction and upload status.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+### From Source
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KompallyAkhik/CodeSync.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Build the extension:
+   ```bash
+   npm run build
+   ```
+4. Load into Chrome:
+   - Open Chrome and go to `chrome://extensions`.
+   - Enable "Developer mode" (top right).
+   - Click "Load unpacked".
+   - Select the `dist` folder from the project directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Click the extension icon in the toolbar.
+2. Go to the **Settings** page (gear icon if not automatically prompted).
+3. Enter your **GitHub Personal Access Token** (Generate one [here](https://github.com/settings/tokens) with `repo` scope).
+4. Enter your **GitHub Username**.
+5. Enter the **Repository Name** where you want to save solutions (must exist).
+6. Click **Save Configuration**.
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Start dev server (not typical for extensions, but available).
+- `npm run build` - Build for production.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- React
+- Vite
+- Chrome Extension Manifest V3
