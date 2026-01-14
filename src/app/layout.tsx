@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "CodeSync",
     images: [
       {
-        url: "/og-images.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "CodeSync Preview",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CodeSync",
     description: "Sync your coding progress instantly and seamlessly",
-    images: ["/og-images.png"],
+    images: ["/og-image.png"],
   },
 };
 
