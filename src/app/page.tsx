@@ -59,7 +59,7 @@ export default function Home() {
               <HeroVideoDialog
                 className="w-full"
                 animationStyle="from-center"
-                videoSrc="/video.mp4"
+                videoSrc="/CodeSync-Demo.mp4"
                 thumbnailSrc="/thumbnail.png"
                 thumbnailAlt="CodeSync Demo"
               />
