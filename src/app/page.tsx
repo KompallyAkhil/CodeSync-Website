@@ -6,7 +6,9 @@ import {
   Layout, 
   Shield, 
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Download,
+  FolderArchive
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -46,8 +48,14 @@ export default function Home() {
               </Link>
               <ArrowRight className="ml-2 size-4" />
             </Button>
+            <Button size="lg" variant="outline" className="cursor-pointer h-12 px-8 text-base" asChild>
+              <a href="/CodeSync-extension.zip" download>
+                <Download className="mr-2 size-4" />
+                Download ZIP
+              </a>
+            </Button>
             <HeroVideoDialog animationStyle="from-center" videoSrc="/video.mp4">
-              <Button size="lg" variant="outline" className="cursor-pointer h-12 px-8 text-base">
+              <Button size="lg" variant="ghost" className="cursor-pointer h-12 px-8 text-base">
                 View Demo
               </Button>
             </HeroVideoDialog>
@@ -163,6 +171,35 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <Separator className="my-16 bg-white/10" />
+
+            <div id="manual-installation" className="mt-16">
+              <div className="text-center mb-12">
+                <Badge variant="outline" className="mb-4 border-primary/30 text-primary">Manual Setup</Badge>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">Manual Installation Steps</h3>
+                <p className="text-muted-foreground">Follow these steps if you are installing via the ZIP file</p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { title: "Download & Extract", desc: "Download the ZIP file and extract it to a preferred folder." },
+                  { title: "Open Extensions", desc: "Go to chrome://extensions in your Chrome browser." },
+                  { title: "Enable Developer Mode", desc: "Toggle the 'Developer mode' switch in the top right corner." },
+                  { title: "Load Unpacked", desc: "Click 'Load unpacked' and select the extracted folder." }
+                ].map((step, i) => (
+                  <Card key={i} className="p-6 bg-background/40 border-white/5 flex gap-4">
+                    <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold shrink-0">
+                      {i + 1}
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">{step.title}</h4>
+                      <p className="text-sm text-muted-foreground">{step.desc}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
