@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/4c674cd6-b419-4049-9613-ec9d6c533c37
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/KompallyAkhik/CodeSync-Extension.git
+   git clone https://github.com/KompallyAkhil/CodeSync-Extension.git
    ```
 2. Install dependencies:
    ```bash
