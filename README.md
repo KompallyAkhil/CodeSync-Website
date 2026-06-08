@@ -1,3 +1,6 @@
+
+
+
 # CodeSync Extension
 
 CodeSync is a Chrome extension that helps you sync your coding solutions from various competitive programming platforms directly to your GitHub repository.
@@ -16,13 +19,17 @@ CodeSync is a Chrome extension that helps you sync your coding solutions from va
 - **GitHub Integration**: Pushes code directly to your configured GitHub repository.
 - **Status Updates**: Real-time feedback on extraction and upload status.
 
+## Demo
+
+https://github.com/user-attachments/assets/4c674cd6-b419-4049-9613-ec9d6c533c37
+
 ## Installation
 
 ### From Source
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/KompallyAkhik/CodeSync.git
+   git clone https://github.com/KompallyAkhik/CodeSync-Extension.git
    ```
 2. Install dependencies:
    ```bash
